@@ -30,22 +30,23 @@ if not os.path.exists(location+filename):
 
 datafile = open(sys.argv[1], 'rU')
 datareader = csv.reader(datafile)
-data = []
+count=0
 for index, row in enumerate(datareader):
     output_file = open(os.path.join(location+filename, str(index)+'.txt'),'wb')
     output_csv = csv.writer(output_file)
     output_csv.writerow(row)
-
+    count=count+1
 datafile.close()
 
+print count+" .txt files written to "+location+filename
 #--------------------------------------------------------------------------
 # Uncomment to use for Column Extraction
 #--------------------------------------------------------------------------
 
-import sys, string, os
-import ntpath
-from itertools import izip
-import csv
+#import sys, string, os
+#import ntpath
+#from itertools import izip
+#import csv
 
 #path = os.path.dirname(os.path.abspath(sys.argv[1]))+"/"+sys.argv[1]
 # path = sys.argv[1]
