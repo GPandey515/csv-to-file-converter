@@ -38,7 +38,9 @@ for index, row in enumerate(datareader):
     count=count+1
 datafile.close()
 
-print count+" .txt files written to "+location+filename
+print "\n-------------------------------------------------------------------------"
+print ("total {} .txt files written to ".format(count)+location+filename,count)
+print "-------------------------------------------------------------------------\n"
 #--------------------------------------------------------------------------
 # Uncomment to use for Column Extraction
 #--------------------------------------------------------------------------
