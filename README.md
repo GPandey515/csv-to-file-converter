@@ -10,4 +10,7 @@ Simple python script to export csv file each rows and columns to .txt files
 ### Run
 
     $ python csv2txt.py teams.csv /home/noones/Desktop/
+    $ python csv2txt.py [csv file ] [location to export .txt files]
+
+
 
